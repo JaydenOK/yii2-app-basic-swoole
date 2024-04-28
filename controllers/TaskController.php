@@ -12,9 +12,6 @@ use app\models\ContactForm;
 
 class TaskController extends Controller
 {
-    //默认方法
-    public $defaultAction = 'index';
-
     /**
      * {@inheritdoc}
      */
@@ -58,20 +55,5 @@ class TaskController extends Controller
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
             ],
         ];
-    }
-
-    /**
-     * Displays homepage.
-     *
-     * @return string
-     */
-    public function actionIndex()
-    {
-        return 'index';
-    }
-
-    public function actionList()
-    {
-        return 'aaa';
     }
 }
